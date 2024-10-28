@@ -19,12 +19,54 @@ When you click the **Knit** button a document will be generated that includes bo
 bike <- read.csv("Bike_sharing_2022.csv")
 ```
 
+
+Part 1: Exploratory Analysis [5 marks]
+
+
+
 ## Including Plots
 
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
+summary(bike)
+
+class(bike$count)
+unique(bike$season)
+
+
+class(bike$holiday)
 hist(bike$holiday)
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+Part 2 [10 marks]
+
+ Days with fewer than 35,000 rented bikes are not profitable for TfL. Therefore, the managing
+ director of TfL asks you to estimate:
+ 
+ a) the expected proportion of days with fewer than 35,000 rented bikes;
+ 
+ b) a 90% confidence interval for that proportion;
+ 
+ c) the expected proportion of days with fewer than 35,000 rented bikes for each season;
+ 
+ d) whether there is a difference between the proportions in winter and spring.
+
+
+ Make sure to include interpretations of your analyses above that are useful for the target
+ audience.
+
+
+Part 3 [10 marks]
+
+
+
+Part 4 [10 marks]
+
+
+
+Bibliography
